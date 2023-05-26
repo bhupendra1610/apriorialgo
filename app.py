@@ -11,7 +11,7 @@ from mlxtend.frequent_patterns import apriori, association_rules
 def find_associatio_rule(support):
   # Load the pickled model
   model = pickle.load(open('aprioriexample.pkl','rb')) 
-  dataset= pd.read_csv('retail_dataset (1).csv')    
+  dataset= pd.read_csv('retail_dataset.csv')    
   #Create list 
   transactions = []
   for i in range(0, 315):
